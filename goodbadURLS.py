@@ -1,3 +1,4 @@
+# urls.txt file will be the input, it has all the urls taken from spider.py file
 import sys
 import requests
 
