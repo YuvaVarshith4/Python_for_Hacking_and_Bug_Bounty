@@ -28,4 +28,4 @@ while not game_over:
     if "_" not in display_word:
             print(f"Your word is {str(display_word)}") 
             game_over = True   
-print("You win the Hangman Challenge!")      
+print("WELL DONE! You win the Hangman Challenge!")      
