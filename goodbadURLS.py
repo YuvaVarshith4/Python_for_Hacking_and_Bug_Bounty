@@ -5,7 +5,7 @@ import requests
 def urls(out_file):
     url2 = sys.stdin.read().splitlines()
 
-    good_urls = []
+    good_url = []
     bad_urls = []
 
     for url in url2 :
@@ -13,14 +13,14 @@ def urls(out_file):
             response = requests.head(url)
             
             if(response.status_code == 200):
-                good_urls.append(url)
+                good_url.append(url)
 
         except requests.exceptions.MissingSchema:
             bad_urls.append(url)
             continue
 
     with open(out_file,'w') as file:
-        file.write ('\n'.join(good_urls))  
+        file.write ('\n'.join(good_url))  
     print(f"saved URLs {out_file}")
 
 
