@@ -7,7 +7,7 @@ while not Tick:
     Student_Grades[name] =  grade
     print(f"Student {name} added successfully")
     print(Student_Grades)
-    Ques = input("Do you want to continue adding? Y/N: ").lower()
+    Ques = input("Do you want to continue adding? Yes(Y,y)/No(N,n): ").lower()
     if Ques == "y":
         pass
     else:
