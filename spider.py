@@ -36,7 +36,7 @@ def spider_urls(url, key_word):
     try:
         response = requests.get(url)
     except:
-        print(f"Request failed for: {url}")
+        print(f"Request failed for : {url}")
         return    
     if response.status_code == 200:
         soup = BeautifulSoup(response.content, 'html.parser')
