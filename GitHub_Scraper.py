@@ -44,8 +44,8 @@ cdp = "/home/yuva/Downloads/chromedriver-linux64/chromedriver"
 s = Service(executable_path=cdp)
 driver = webdriver.Chrome(service=s)
 
-driver.get("https://github.com/YuvaVarshith49")
-repo = "https://github.com/YuvaVarshith49"
+driver.get("https://github.com/UserYourGitAccount")
+repo = "https://github.com/UserYourGitAccount"
 # time.sleep(4)
 res = driver.find_elements(By.CLASS_NAME,"repo")
 # time.sleep(4)
