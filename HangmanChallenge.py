@@ -17,7 +17,7 @@ while not game_over:
             display_word[position] = letter
             tries -= 1
             print(f"Good guess! The letter {letter} is in the word.")
-            print(f"You still have {str(tries)} tries left.")
+            print(f"You still have {str(tries)} tries left. Have a try")
             print(display_word)
     if guess not in secret_random_word:
         tries -= 1
